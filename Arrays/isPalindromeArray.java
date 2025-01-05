@@ -4,13 +4,12 @@ public class isPalindromeArray {
 
         while (start < end) {
             if (arr[start] != arr[end]) {
-                return false; // Not a palindrome
+                return false; 
             }
             start++;
             end--;
         }
-
-        return true; // It's a palindrome
+        return true; 
     }
     public static void main(String[] args) {
         int arr[]={1,2,3,2,1};
