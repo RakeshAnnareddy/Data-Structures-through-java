@@ -1,25 +1,16 @@
 public class isPalindromeArray {
-    public static boolean isPalindrome(int[] arr){
-        int a[]=new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            a[i] = arr[i];
-        }
-        int start=0,end=arr.length-1;
-        
-        while(start<end){
-            int temp=a[start];
-            a[start]=a[end];
-            a[end]=temp;
+    public static boolean isPalindrome(int[] arr) {
+        int start = 0, end = arr.length - 1;
+
+        while (start < end) {
+            if (arr[start] != arr[end]) {
+                return false; // Not a palindrome
+            }
             start++;
             end--;
         }
-        if (arr.length == a.length) {
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] != a[i]) {
-                    return false;
-                }
-            }
-        } return true;
+
+        return true; // It's a palindrome
     }
     public static void main(String[] args) {
         int arr[]={1,2,3,2,1};
