@@ -1,3 +1,5 @@
+//Create an ArrayList of integers and add the numbers 1 to 10. Print the elements.
+
 import java.util.ArrayList;
 class ArrayListCreation{
     public static void main(String[] args) {
