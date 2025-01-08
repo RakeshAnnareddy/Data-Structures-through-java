@@ -1,5 +1,6 @@
 //Remove all even numbers from an ArrayList of integers.
 import java.util.ArrayList;
+import java.util.Iterator;
 public class removeEvenNums {
     public static void main(String[] args) {
         ArrayList<Integer> numbers=new ArrayList<>();
@@ -9,17 +10,17 @@ public class removeEvenNums {
         numbers.add(3);
         numbers.add(6);
         System.out.println("Before removing all even numbers");
-        for(int nums:numbers){
-            System.out.print(nums+" ");
+        System.out.println(numbers);
+
+        Iterator<Integer> iterator = numbers.iterator();
+        while (iterator.hasNext()) {
+            if (iterator.next() % 2 == 0) {
+                iterator.remove();
+            }
         }
-        for(int i=0;i<numbers.size();i++){
-            if(numbers.get(i)%2==0)
-            numbers.remove(i);
-        }
-        System.out.println();
+
         System.out.println("After removing all even numbers");
-        for(int nums:numbers){
-            System.out.print(nums+" ");
+        System.out.println(numbers);
         }
     }
 }
