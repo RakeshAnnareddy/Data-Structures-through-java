@@ -21,6 +21,6 @@ public class removeEvenNums {
 
         System.out.println("After removing all even numbers");
         System.out.println(numbers);
-        }
     }
 }
+
