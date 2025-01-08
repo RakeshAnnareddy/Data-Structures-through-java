@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class isElementExists {
     public static boolean isNumberExist(ArrayList<Integer> numbers,int num){
             return numbers.contains(num); 
-
     }
     public static void main(String[] args) {
         ArrayList<Integer> numbers=new ArrayList<>();
